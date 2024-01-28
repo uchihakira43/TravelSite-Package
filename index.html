@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./scss/main.css">
+    <title>Travel Site</title>
+</head>
+
+<!--Header section-->
+
+<body>
+    <header class="topbar">
+        <div class="container flex-container flex-container--topbar">
+            <a class="topbar__logo-link" href="../TravelSite-Package/index.html">
+                <h1 class="topbar__logo-name">Travel Site</h1>
+            </a>
+            <nav class="topbar__navigation">
+                <ul class="topbar__navigation-items">
+                    <li class="topbar__navigation-item"><a  class="topbar__navigation-link topbar__navigation-item--active" href="../TravelSite-Package/index.html">Home</a></li>
+                    <li class="topbar__navigation-item"><a  class="topbar__navigation-link" href="../TravelSite-Package/pages/hawaii.html">Hawaii</a></li>
+                    <li class="topbar__navigation-item"><a  class="topbar__navigation-link" href="../TravelSite-Package/pages/iceland.html">Iceland</a></li>
+                    <li class="topbar__navigation-item topbar__navigation-item--last"><a  class="topbar__navigation-link" href="../TravelSite-Package/pages/greece.html">Greece</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!--Main section-->
+
+    <main>
+        <section class="hero">
+            <div class="container flex-container flex-container--hero">
+                <div class="hero__details">
+                    <h1 class="hero__title">Travelling Comes With Endless Disoveries</h1>
+                    <p class="hero__slogan">Don't let your dreams be just dreams. Experience the world by booking a vacation right now!</p>
+                    <a class="hero__action" href="#get-started">Get Started</a>
+                </div>
+                <div class="hero__graphic">
+                    <img class="hero__image" src="../TravelSite-Package/2.0 - Assets/Images/hero.png" alt="Airplane travelling around the world">
+                </div>
+            </div>
+        </section>
+
+        <!--Recommendation Section-->
+
+        <section id="get-started" class="destinations-card">
+            <div class="container flex-container flex-container--destinations-card">
+                <h2 class="destinations-card__main-title">Recommendations</h2>
+                <a class="destinations-card__link" href="../TravelSite-Package/pages/hawaii.html">
+                    <img class="destinations-card__image" src="../TravelSite-Package/2.0 - Assets/Images/hawaii.jpg" alt="Hawaii">
+                    <h3 class="destinations-card__title">Hawaii</h3>
+                </a>
+                <a class="destinations-card__link" href="../TravelSite-Package/pages/iceland.html">
+                    <img class="destinations-card__image" src="../TravelSite-Package/2.0 - Assets/Images/iceland.jpg" alt="Iceland">
+                    <h3 class="destinations-card__title">Iceland</h3>
+                </a>
+                <a class="destinations-card__link" href="../TravelSite-Package/pages/greece.html">
+                    <img class="destinations-card__image" src="../TravelSite-Package/2.0 - Assets/Images/greece.jpg" alt="Greece">
+                    <h3 class="destinations-card__title">Greece</h3>
+                </a>
+            </div>
+        </section>
+    </main>
+
+    <!--Footer section-->
+    <footer class="contact-card">
+        <div class="container flex-container flex-container--contact-card">
+            <section class="contact-card__email">
+                <h2 class="contact-card__title">Contact</h2>
+                <span class="contact-card__label">Email</span>
+                <a class="contact-card__info" href="mailto:info@travelsite.com">info@travelsite.com</a>
+            </section>
+            <section class="contact-card__hours contact-card--spacer">
+                <h2 class="contact-card__title">Hours</h2>
+                <div class="contact-card__days-times flex-container">
+                    <div class="contact-card__day-time">
+                        <span class="contact-card__label">Monday - Friday</span>
+                        <span class="contact-card__info">9:00 AM - 5:00 PM</span>
+                    </div>
+                    <div class="contact-card__day-time contact-card__day-time--spacer">
+                        <span class="contact-card__label">Saturday</span>
+                        <span class="contact-card__info">10:00 AM - 4:00 PM</span>
+                    </div>
+                    <div class="contact-card__day-time">
+                        <span class="contact-card__label">Sunday</span>
+                        <span class="contact-card__info">Closed</span>
+                    </div>
+                </div>
+            </section>
+            <section class="contact-card__social">
+                <h2 class="contact-card__title">Social</h2>
+                <div class="contact-card__social-links flex-container">                                
+                    <a class="contact-card__social-link" href="https://instagram.com/#"><img class="contact-card__social-icon" src="../TravelSite-Package/2.0 - Assets/Icons/icon-instagram.png" alt="travel site instagram"></a>
+                    <a class="contact-card__social-link contact-card__social-link--spacer" href="https://facebook.com/#"><img class="contact-card__social-icon contact-card__social-icon--facebook" src="../TravelSite-Package/2.0 - Assets/Icons/icon-facebook.png" alt="travel site facebook"></a>
+                    <a class="contact-card__social-link" href="https://twitter.com/#"><img class="contact-card__social-icon" src="../TravelSite-Package/2.0 - Assets/Icons/icon-twitter.png" alt="tavel site twitter"></a>
+                </div>
+            </section>
+        </div>
+    </footer>
+</body>
+</html>

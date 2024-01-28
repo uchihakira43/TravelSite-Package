@@ -1,0 +1,3 @@
+@mixin iternary-card-background($destination) {
+    background-image: url("../assets/Images/#{$destination}.jpg");
+}

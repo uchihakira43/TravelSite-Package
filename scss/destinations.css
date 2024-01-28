@@ -1,0 +1,210 @@
+/* Colors */
+/* Reset */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  border: 0;
+  padding: 0;
+}
+
+/* Default Styles */
+body {
+  font-family: Verdana;
+  font-weight: 400;
+  color: #222222;
+}
+
+main {
+  margin-top: 4rem;
+}
+
+a {
+  color: #222222;
+  text-decoration: none;
+}
+
+h1, h2, h3, h4, h5, h6,
+a:hover, a:active {
+  color: #335576;
+}
+
+/* Container section*/
+.container {
+  width: 1280px;
+  margin: auto;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.flex-container {
+  display: flex;
+}
+
+.flex-container--topbar,
+.flex-container--contact-card,
+.flex-container--itinerary-card,
+.flex-container--destinations-card {
+  display: flex;
+  /*flex-wrap: wrap;*/
+  justify-content: center;
+  align-items: center;
+}
+
+.flex-container--topbar {
+  justify-content: space-between;
+}
+
+/* Header section */
+.topbar {
+  position: fixed;
+  width: 100%;
+  top: 0;
+  left: 0;
+  z-index: 999;
+  background: #FFFFFF;
+  padding: 1rem;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.topbar__logo-link {
+  color: #335576;
+}
+
+.topbar__logo-link:hover, .topbar__logo-link:active {
+  color: #335576;
+}
+
+.topbar__logo-name {
+  font-size: 1.5rem;
+}
+
+.topbar__navigation-items {
+  display: flex;
+  list-style: none;
+}
+
+.topbar__navigation-item {
+  margin-right: 2rem;
+}
+
+.topbar__navigation-item--last {
+  margin-right: 0;
+}
+
+.topbar__navigation-link {
+  padding-bottom: 0.5rem;
+}
+
+.topbar__navigation-link:hover,
+.topbar__navigation-link:hover,
+.topbar__navigation-item--active {
+  color: #222222;
+  border-bottom: 0.2rem solid #DB7A4E;
+}
+
+/* Itinerary section */
+.itinerary-card {
+  padding: 4rem 0 7rem;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.itinerary-card--hawaii {
+  background-image: url("../assets/Images/hawaii.jpg");
+}
+
+.itinerary-card--iceland {
+  background-image: url("../assets/Images/iceland.jpg");
+}
+
+.itinerary-card--greece {
+  background-image: url("../assets/Images/greece.jpg");
+} 
+
+.itinerary-card__day {
+  width: 100%;
+  max-width: 250px;
+  padding: 1rem 1rem 3rem;
+  margin-right: 4rem;
+  border-radius: 0.35rem;
+  text-align: center;
+  background-color: #FFFFFF;
+  box-shadow: 0 0 1px rgba(0, 0, 0, 0.2);
+}
+
+.itinerary-card__day-title {
+  margin-right: 0;
+}
+
+.itinerary-card__title {
+  display: flex;
+  flex: 0 0 100%;
+  margin-bottom: 3rem;
+  font-size: 4rem;
+  color: #FFFFFF;
+  text-shadow: 0 1px 1px rgba(0, 0, 0, 0.5);
+  padding-left: 2rem;
+}
+
+.itinerary-card__day-title {
+  margin-bottom: 2rem;
+  color: #222;
+  border-bottom: 3px solid #222;
+}
+
+.itinerary-card__activities {
+  list-style: none;
+}
+
+.itinerary-card__activity {
+  margin-bottom: 1rem;
+  padding: 1rem 0;
+  background-color: #FEFAF5;
+}
+
+/* Footer section */
+.contact-card {
+  padding: 3.5rem 0;
+  background-color: #FFFFFF;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.contact-card__title {
+  margin: 0 0 2rem;
+}
+
+.contact-card__info {
+  color: #335576;
+}
+
+.contact-card__label {
+  margin: 0 0 0.5rem;
+  display: block;
+  color: #DB7A4E;
+  font-size: 0.7rem;
+  text-transform: uppercase;
+}
+
+.contact-card__day-time--spacer,
+.contact-card__social-link--spacer {
+  margin: 0 2rem;
+}
+
+.contact-card--spacer {
+  margin: 0 7rem;
+}
+
+.contact-card__social-icon {
+  width: 100%;
+  max-width: 2rem;
+}
+
+.contact-card__social-icon--facebook {
+  width: 100%;
+  max-width: 1rem;
+}

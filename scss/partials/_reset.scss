@@ -1,0 +1,27 @@
+@use './variables' as *;
+
+/* Reset */
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    border: 0;
+    padding: 0;
+}
+
+/* Default Styles */
+
+body {
+    font-family: Verdana;
+    font-weight: 400;
+    color: $primary-color;
+}
+main {margin-top:4rem;}
+a {
+    color: $primary-color;
+    text-decoration: none;
+}
+h1, h2, h3, h4, h5, h6,
+a:hover, a:active {
+    color: $highlight-color;
+}

@@ -1,0 +1,79 @@
+@use './variables' as *;
+
+/* containers/wrapper */
+
+.container {
+    width: 1280px;
+    margin: auto;
+}
+
+.flex-container {display: flex;}
+.flex-container--topbar,
+.flex-container--contact-card,
+.flex-container--itinerary-card,
+.flex-container--destinations-card {
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+.flex-container--topbar {
+    justify-content: space-between;
+}
+
+/* Nav/top-bar section */
+
+.topbar {
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+    z-index: 999;
+    background: $secondary-color;
+    padding: 1rem 0;
+}
+.topbar__logo-link {color: $highlight-color}
+.topbar__logo-link:hover, .topbar__logo-link:active {color: $highlight-color}
+.topbar__logo-name {font-size: 1.5rem;}
+.topbar__navigation-items {
+    display: flex;
+    list-style: none;
+}
+.topbar__navigation-item {margin-right: 2rem;}
+.topbar__navigation-item--last {margin-right: 0;}
+
+.topbar__navigation-link {
+    padding-bottom: .5rem;
+}
+.topbar__navigation-link:hover,
+.topbar__navigation-link:hover,
+.topbar__navigation-item--active {
+    color: $primary-color;
+    border-bottom: .20rem solid $accent-color;
+}
+
+/* Footer section */
+
+.contact-card {
+    padding: 3.5rem 0;
+    background-color: $secondary-color;
+}
+.contact-card__title {margin: 0 0 2rem;}
+.contact-card__info {color: $highlight-color;}
+.contact-card__label {
+    margin: 0 0 .5rem;
+    display: block;
+    color: $accent-color;
+    font-size: .7rem;
+    text-transform: uppercase;
+}
+.contact-card__day-time--spacer,
+.contact-card__social-link--spacer {margin: 0 2rem;}
+.contact-card--spacer {margin: 0 7rem;}
+.contact-card__social-icon {
+    width: 100%;
+    max-width: 2rem;
+}
+.contact-card__social-icon--facebook {
+    width: 100%;
+    max-width: 1rem;
+}
